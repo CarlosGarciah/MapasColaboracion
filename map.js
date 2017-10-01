@@ -16,9 +16,9 @@ var catastroBase = L.tileLayer.wms('http://ovc.catastro.meh.es/Cartografia/WMS/S
 });
 
 
-var punto = L.marker([37.18974, -3.71918]).bindPopup('Soy un puntazo');
+var punto = L.marker([37.18974, -3.71918]).bindPopup('Parada de autobus 0240');
 
-var punto2 = L.marker([37.18661, -3.72427]).bindPopup('Soy un puntazo2');
+var punto2 = L.marker([37.18661, -3.72427]).bindPopup('Parada de autobus 0240');
 
 
 punto.addTo(map);
