@@ -16,12 +16,12 @@ var catastroBase = L.tileLayer.wms('http://ovc.catastro.meh.es/Cartografia/WMS/S
 });
 
 
-var punto = L.marker([37.18974, -3.71918]).bindPopup('Parada de autobus 0240');
+var bar1 = L.marker([37.1916462, -3.711131]).bindPopup('Bar d`tapas'),
+    bar2    = L.marker([37.1915012, -3.7118028]).bindPopup('Bar santi'),
+    bar3    = L.marker([37.1899571, -3.7166183]).bindPopup('Taberna el arco'),
+var bares = L.layerGroup([bar1, bar2, bar3]);
 
-var punto2 = L.marker([37.18661, -3.72427]).bindPopup('Parada de autobus 0240');
 
-
-punto.addTo(map);
 
 var baseMaps = {
     "OSM": osmBase,
@@ -29,8 +29,7 @@ var baseMaps = {
 };
 
 var overlayMaps = {
-    "Parada 1": punto,
-    "Parada 2" :punto2
+    "Bares": bares,
 
 };
 
