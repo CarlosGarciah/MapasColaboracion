@@ -23,24 +23,24 @@ var bar1 = L.marker([37.1916462, -3.711131]).bindPopup('Bar d`tapas'),
     bar5 = L.marker([37.191542, -3.710769]).bindPopup('El Trocadero');
 
 var bus1 = L.marker([37.189728, -3.71841]).bindPopup('Parada plaza'),
-var bus2 = L.marker([37.190274 , -3.715949]).bindPopup('Parada optica'),
-var bus3 = L.marker([37.191337, -3.711714]).bindPopup('Parada rotonda del reloj'),
-var bus4 = L.marker([37.192012, -3.708805]).bindPopup('Parada parque de la rotonda'),
-var bus5 = L.marker([37.188952, -3.721459]).bindPopup('Parada Carmen Salles'),
-var bus6 = L.marker([37.192348, -3.71767]).bindPopup('Parada del puente'),
+    bus2 = L.marker([37.190274 , -3.715949]).bindPopup('Parada optica'),
+    bus3 = L.marker([37.191337, -3.711714]).bindPopup('Parada rotonda del reloj'),
+    bus4 = L.marker([37.192012, -3.708805]).bindPopup('Parada parque de la rotonda'),
+    bus5 = L.marker([37.188952, -3.721459]).bindPopup('Parada Carmen Salles'),
+    bus6 = L.marker([37.192348, -3.71767]).bindPopup('Parada del puente'),
 
 var bares = L.layerGroup([bar1, bar2, bar3]);
 var bus = L.layerGroup([bus1, bus2, bus3, bus4, bus5, bus6]);
 
 
 var baseMaps = {
-    "Santa Fe": osmBase,
+    "OSM": osmBase,
     "Catastro": catastroBase
 };
 
 var overlayMaps = {
     "Bares": bares,
-    "Autobus": Buses,
+    "Autobus": Bus,
 };
 
 
